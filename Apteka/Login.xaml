@@ -1,0 +1,24 @@
+﻿<Window x:Class="Apteka.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Apteka"
+        mc:Ignorable="d"
+        Title="Вход в аккаунт" Height="300" Width="400" ResizeMode="NoResize" Background="#F0F0F0">
+    <Grid Margin="0">
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Image/6.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch">
+
+            <TextBlock Text="Войти в аккаунт" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" />
+
+            <TextBox x:Name="name" Width="Auto" Height="30" />
+            <PasswordBox x:Name="password" Width="Auto" Height="30" />
+
+            <Button Click="Button_Click" Content="Войти" Width="100" Height="40" Background="#4CAF50" Foreground="White" 
+                    FontSize="16" BorderBrush="Transparent" />
+        </StackPanel>
+    </Grid>
+</Window>
